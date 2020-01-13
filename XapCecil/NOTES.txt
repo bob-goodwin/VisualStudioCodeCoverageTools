@@ -1,0 +1,6 @@
+Mono.Cecil is forked from Il-Repack: https://github.com/gluck/cecil/tree/c854cad1a1da59ea94e5e87cbcc0b0a1416c9b62, which is forked from https://github.com/jbevain/cecil/commit/51d55cb3e9228638382eefdb4c8a633e2249569e
+
+Changes compared to il-repack version:
+	Remove Declaring type full name check from MethodParameter lookup. This reverts change in il-repack branch and brings it in line with original cecil, code is impacting generics for nested types. It fixes UTs shipping with Cecil. (Mono.Cecil\Import.cs: MethodParameter)
+	Do not create resources in PE if resource is empty (not just null) (Mono.Cecil.PE\ImageWriter.cs: GetWin32Resources). This used to create assemblies failing peverify.
+	FXCop passing (Mono.Cecil.Cil\CodeReader.cs and CodeWriter.cs)
