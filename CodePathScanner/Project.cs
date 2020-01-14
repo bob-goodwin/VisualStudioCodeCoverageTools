@@ -76,7 +76,10 @@ namespace CodePathScanner
             catch (Exception e)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Could not read project file '{projectPath}'", e);
+                Console.WriteLine($"Could not read project file '{projectPath}'", projectPath);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace.ToString());
                 Console.ForegroundColor = ConsoleColor.White;
             }
 
@@ -87,6 +90,7 @@ namespace CodePathScanner
             var dst = Path.Combine(this.binDir, Path.GetFileName(reference));
             if (!File.Exists(dst))
             {
+                Directory.CreateDirectory(Path.GetDirectoryName(dst));
                 File.Copy(reference, dst, overwrite: true);
             }
 
