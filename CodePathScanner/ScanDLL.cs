@@ -67,7 +67,9 @@ namespace CodePathScanner
                 {
                     switch (instr.OpCode.Code)
                     {
+                        case Code.Callvirt:
                         case Code.Call:
+                        case Code.Newobj:
                             Call(instr.Operand as MethodReference);
                             break;
                         case Code.Calli:

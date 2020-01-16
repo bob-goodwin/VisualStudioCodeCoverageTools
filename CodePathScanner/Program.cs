@@ -25,7 +25,10 @@ namespace CodePathScanner
             else if (args.Count() == 2 && args[0] == "method")
             {
                 ScanFile(args[1], false);
-
+            }
+            else if (args.Count() == 2 && args[0] == "csproj")
+            {
+                new ScanDLL(new Scanner(), args[1]);
             }
             else if (args.Count() == 2 && args[0] == "playlist")
             {
@@ -40,6 +43,11 @@ namespace CodePathScanner
                 Console.WriteLine("CodePathScanner.exe playlist <methodname>  // same as 'test', but generates a playlist.xml file");
                 Console.WriteLine("// <methodname> can be a partial string, if more than one methods match, then the choices will be shown");
             }
+        }
+
+        static void Csproj(string path)
+        {
+            new Project(path);
         }
 
         static void ScanFile(string methodname, bool test, bool playlist=false)
