@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Cecil", "XapCecil\Mono
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePathScanner", "CodePathScanner\CodePathScanner.csproj", "{0C83A53E-FA16-4436-BA7A-FD5470ECC6E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UncoveredCandidates", "UncoveredCandidates\UncoveredCandidates.csproj", "{4DF8D3CB-064D-415C-A6E0-9BF31D0A66E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|amd64 = Debug|amd64
@@ -55,6 +57,18 @@ Global
 		{0C83A53E-FA16-4436-BA7A-FD5470ECC6E2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0C83A53E-FA16-4436-BA7A-FD5470ECC6E2}.Release|x64.ActiveCfg = Release|Any CPU
 		{0C83A53E-FA16-4436-BA7A-FD5470ECC6E2}.Release|x64.Build.0 = Release|Any CPU
+		{4DF8D3CB-064D-415C-A6E0-9BF31D0A66E3}.Debug|amd64.ActiveCfg = Debug|Any CPU
+		{4DF8D3CB-064D-415C-A6E0-9BF31D0A66E3}.Debug|amd64.Build.0 = Debug|Any CPU
+		{4DF8D3CB-064D-415C-A6E0-9BF31D0A66E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DF8D3CB-064D-415C-A6E0-9BF31D0A66E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DF8D3CB-064D-415C-A6E0-9BF31D0A66E3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4DF8D3CB-064D-415C-A6E0-9BF31D0A66E3}.Debug|x64.Build.0 = Debug|Any CPU
+		{4DF8D3CB-064D-415C-A6E0-9BF31D0A66E3}.Release|amd64.ActiveCfg = Release|Any CPU
+		{4DF8D3CB-064D-415C-A6E0-9BF31D0A66E3}.Release|amd64.Build.0 = Release|Any CPU
+		{4DF8D3CB-064D-415C-A6E0-9BF31D0A66E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DF8D3CB-064D-415C-A6E0-9BF31D0A66E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DF8D3CB-064D-415C-A6E0-9BF31D0A66E3}.Release|x64.ActiveCfg = Release|Any CPU
+		{4DF8D3CB-064D-415C-A6E0-9BF31D0A66E3}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
